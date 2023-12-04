@@ -34,40 +34,21 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.transparentColor,
-      body: Stack(
-        alignment: AlignmentDirectional.center,
-        children: [
-          Image.asset(
-            ImagePath.splashScreen,
-            fit: BoxFit.cover,
-          ),
-          Container(
-            color: AppColors.blackColor.withOpacity(0.4),
-            width: double.infinity,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              // mainAxisSize: MainAxisSize.max,
-              children: [
-                SizedBox(
-                  height: 80,
-                  width: 80,
-                  child: Image.asset(
-                    ImagePath.splashLogo,
-                    // fit: BoxFit.fill,
-                  ),
-                ),
-                Text(
-                  " Grocery Plus ",
-                  style: AppTextStyle.regular600.copyWith(
-                      fontSize: 26,
-                      color: AppColors.whiteColor,
-                      letterSpacing: 1),
-                )
-              ],
-            ),
-          )
-        ],
+      body: Container(
+        color: AppColors.whiteColor,
+        width: double.infinity,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          // mainAxisSize: MainAxisSize.max,
+          children: [
+            Text(
+              " Resume Builder ",
+              style: AppTextStyle.regular600.copyWith(
+                  fontSize: 26, color: AppColors.blackColor, letterSpacing: 1),
+            )
+          ],
+        ),
       ),
     );
   }

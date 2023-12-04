@@ -3,10 +3,12 @@ import 'package:get/get.dart';
 import 'package:resumee/config/app_colors.dart';
 import 'package:resumee/controller/home_controller.dart';
 
+import 'view/profile_screen/profile_controller.dart';
 import 'view/splash/splash_screen.dart';
 
 void main() {
   Get.put(HomeController());
+  Get.put(ProfileController());
 
   runApp(const MyApp());
 }
