@@ -36,12 +36,13 @@ commonAppBar({
                     child: Container(
                       height: 30,
                       padding: leftPadding ?? const EdgeInsets.all(8),
-                      width: 40,
+                      width: 10,
                       child: leftIcon != null
                           ? Icon(
                               leftIcon,
                               size: leftIconSize ?? 18,
-                            )
+                        color: AppColors.whiteColor,
+                      )
                           : Image.asset(
                               "$leftImage",
                               width: leftIconSize ?? 19,
@@ -74,6 +75,7 @@ commonAppBar({
                           ? Icon(
                               rightIcon,
                               size: rightIconSize ?? 18,
+                        color: AppColors.whiteColor,
                             )
                           : Image.asset(
                               "$rightImage",

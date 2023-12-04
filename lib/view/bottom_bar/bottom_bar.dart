@@ -5,7 +5,7 @@ import 'package:resumee/config/app_colors.dart';
 import 'package:resumee/config/image_path.dart';
 import 'package:resumee/controller/home_controller.dart';
 import 'package:resumee/view/home_screen/home_screen.dart';
-import 'package:resumee/view/search_screen/search_screen.dart';
+import 'package:resumee/view/profile_screen/profile_screen.dart';
 
 class BottomBarScreen extends StatefulWidget {
   const BottomBarScreen({Key? key}) : super(key: key);
@@ -27,23 +27,9 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
             () => homeController.selectedBottomIndex.value == 0
             ? const HomeScreen()
             : homeController.selectedBottomIndex.value == 1
-            ? const SearchScreen()
+            ? const ProfileScreen()
             :const SizedBox(),
       ),
-      // body: PageStorage(
-      //   bucket: bucket,
-      //   child: Obx(
-      //     () => homeController.selectedBottomIndex.value == 0
-      //         ? DrawerScreen()
-      //         : homeController.selectedBottomIndex.value == 1
-      //             ? const SearchScreen()
-      //             : homeController.selectedBottomIndex.value == 2
-      //                 ? const CategoryScreen()
-      //                 : homeController.selectedBottomIndex.value == 3
-      //                     ? const ProfileScreen()
-      //                     : const SizedBox(),
-      //   ),
-      // ),
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
           color: Colors.white,

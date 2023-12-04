@@ -6,6 +6,7 @@ class AppColors {
   // Constant color
   static const Color whiteColor = Color(0xffffffff);
   static const Color blackColor = Colors.black;
+  static const Color blueColor = Colors.blue;
   static Color black50 = Colors.black.withOpacity(0.5);
   static const Color blackHomeTitle = Color(0xff06161C);
 
